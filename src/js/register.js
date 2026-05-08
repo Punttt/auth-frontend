@@ -16,5 +16,7 @@ form.addEventListener("submit", async (e) => {
 
     // Klientvalidering
     if (!username | !email | !passord) {
+        showMessage("message", "Alla fält måste fyllas i", "error");
+        return;
     }
 })

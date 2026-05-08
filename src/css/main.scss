@@ -117,7 +117,7 @@ form {
             border-width: 1px;
         }
     }
-    button {
+    .btn {
         margin-top: 1rem;
         height: 2.5rem;
         border-radius: 5px;
@@ -127,9 +127,10 @@ form {
         color: #fff;
         font-weight: 500;
         cursor: pointer;
-    }
-    button:hover {
-        background: $primary-hover;
+
+        &:hover {
+            background: $primary-hover;
+        }
     }
     
 }
