@@ -29,7 +29,13 @@ form.addEventListener("submit", async (e) => {
         }); 
 
         const data = await response.json();
-        console.log(data);
+        
+        // Hanterar response från servern
+        if(response.ok) {
+            showMessage("message", "Konto skapat", "success");
+        } else {
+            showMessage("message", "Något gick fel, försök igen senare", "error");
+        }
     } catch (error) {
         console.error(error);
         showMessage("message", "Kunde inte ansluta till servern", "error")
