@@ -15,7 +15,7 @@ form.addEventListener("submit", async (e) => {
     const password = document.getElementById("password").value.trim();
 
     // Klientvalidering
-    if (!username | !email | !passord) {
+    if (!username || !email || !password) {
         showMessage("message", "Alla fält måste fyllas i", "error");
         return;
     }
