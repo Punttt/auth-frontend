@@ -25,15 +25,20 @@ body {
   background: $bg-page;
   color: $text-primary;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   line-height: 1.5;
 }
 
 header {
     background-color: $primary;
     width: 100%;
+}
+
+// Auth sidor
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;   
 }
 
 .card {
