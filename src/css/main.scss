@@ -150,3 +150,25 @@ form {
         }
     }
 }
+
+// Felmeddelande - error / success
+#message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+
+  &:empty {
+    display: none;
+  }
+
+  &.success {
+    background: $success-bg;
+    color: $success-text;
+  }
+
+  &.error {
+    background: $error-bg;
+    color: $error-text;
+  }
+}
