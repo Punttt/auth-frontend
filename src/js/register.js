@@ -19,4 +19,19 @@ form.addEventListener("submit", async (e) => {
         showMessage("message", "Alla fält måste fyllas i", "error");
         return;
     }
+
+    try {
+        // Skickar POST anrop till backend.
+        const response = await fetch(`${API_URL/register}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, email, password })
+        }); 
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+        showMessage("message", "Kunde inte ansluta till servern", "error")
+    }
 })
