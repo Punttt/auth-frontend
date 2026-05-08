@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="/src/css/main.scss">
   </head>
   <body>
+    <main class="card">
+      <h1>Skapa konto</h1>
+      <p>Registrera dig för att komma igång</p>
+
+      <form>
+        <label for="username">Användarnamn</label>
+        <input type="text" name="username" id="username">
+
+        <label for="email">E-postadress</label>
+        <input type="email" name="email" id="email">
+
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Registrera" id="registerBtn"> 
+      </form>
+
+      <span>Har du redan ett konto? <a href="/login">Logga in</a></span>
+    </main>
     <script type="module" src="/src/js/register.js"></script>
   </body>
 </html>
