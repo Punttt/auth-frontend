@@ -33,6 +33,7 @@ form.addEventListener("submit", async (e) => {
         if(response.ok) {
             // Sparar token i local storage
             sessionStorage.setItem("token", data.token); 
+            window.location.href = "/dashboard";
             showMessage("message", "Du är inloggad", "success");
         } else {
             showMessage("message", "Det är fel användarnamn eller lösenord, försök igen senare", "error");
