@@ -7,3 +7,12 @@ const token = sessionStorage.getItem("token");
 if(!token) {
     window.location.href = "/login";
 }
+
+// Hämtar profildata från skyddad route när sidan laddas
+async function loadProfile(){
+    try {
+
+    } catch (error) {
+        console.error(error);
+    }
+}
