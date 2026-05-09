@@ -67,6 +67,7 @@ body {
         align-items: center;
         justify-content: center;
         padding: 1.5rem;
+        margin-bottom: 1rem;
 
 
         .profile-avatar {
@@ -78,12 +79,23 @@ body {
             border: 2px solid #fff;
         }
 
-        h2 {
-            font-weight: 600;
+        h1 {
+          font-size: 2rem;
+          font-weight: 600;
         }
-        h2:before {
+        h1:before {
             content: "@";
         }
+    }
+
+    main {
+      background: $bg-card;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 0.5px solid $border;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
 }
 
