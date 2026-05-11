@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auth-frontend</title>
+    <link rel="stylesheet" href="/src/css/main.scss">
+  </head>
+  <body class="dashboard-page">
+    <header class="hero">
+        <div class="profile-avatar"></div>
+        <h1 id="profile-username"></h1>
+    </header>
+    <main>
+      <h2>Kontoinformation</h2>
+      <p><strong>Användarnamn:</strong> <span id="profile-user"></span></p>
+      <p><strong>E-postadress:</strong> <span id="profile-email"></span></p>
+      <p><strong>Konto skapat:</strong> <span id="profile-created"></span></p>
+
+      <button id="logoutBtn" class="btn">Logga ut</button>
+    </main>
+    <script type="module" src="/src/js/dashboard.js"></script>
+  </body>
+</html>

@@ -7,7 +7,26 @@
     <title>auth-frontend</title>
     <link rel="stylesheet" href="/src/css/main.scss">
   </head>
-  <body>
+  <body class="auth-page">
+    <main class="card">
+      <h1>Skapa konto</h1>
+      <p>Registrera dig för att komma igång</p>
+
+      <form id="registerForm">
+        <label for="username">Användarnamn</label>
+        <input type="text" name="username" id="username">
+
+        <label for="email">E-post</label>
+        <input type="email" name="email" id="email">
+
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Registrera" class="btn">
+      </form>
+      <p id="message"></p>
+      <p>Har du redan ett konto? <a href="/login">Logga in</a></p>
+    </main>
     <script type="module" src="/src/js/register.js"></script>
   </body>
 </html>
